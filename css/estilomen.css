@@ -1,0 +1,178 @@
+*{
+    font-family: arial;
+    text-align: center;
+	text-decoration: none;
+    
+}
+header{
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	box-shadow: 0  .2rem  1rem rgba(0, 0, 0, .1);
+	padding: 17px 8%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000; 
+}
+header input{
+	display: none;
+}
+header label{
+	font-size: 2rem;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	position: absolute;
+	transform: translateY(-0px);	
+}
+#menbar{
+	font-size: 2rem;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	position: absolute; left: 83%;
+	transform: translateY(-15px);
+}
+
+header .navbar{
+	position: absolute; left: 78%;
+    top: 100%;
+    right: 0;
+	width: 6%;
+	background: white;
+	padding: 1rem 2rem;
+	border-top: .1rem solid rgba(0, 0, 0, .2);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+	transform-origin: top;
+	transform: scaleY(0);
+	opacity: 0;
+	
+}
+
+header .navbar a{
+	display: block;
+	margin: 1rem 0;
+	font-size: 1rem;
+	cursor: pointer;
+	color: black;
+}
+header input#menu-bar:checked ~ .navbar{
+	transform: scaleY(1);
+	opacity: 1;
+}
+header input:checked ~ label::before{
+	content: '\f00d';
+}
+
+header label #bardoc{
+	font-size: 1rem;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	position: absolute;
+	transform: translateY(-0px);	
+}
+
+#bardoc{
+	font-size: 1rem;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	position: absolute; left: 57%;
+	transform: translateY(-20px);
+}
+#bar-doc {
+	display: none;
+  }
+
+header .navbardoc{
+	position: absolute; left: 54%;
+    top: 100%;
+    right: 0;
+	width: 8%;
+	background: white;
+	padding: 1rem 2rem;
+	border-top: .1rem solid rgba(0, 0, 0, .2);
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+	transform-origin: top;
+	transform: scaleY(0);
+	opacity: 0;
+	
+}
+
+header .navbardoc a{
+	display: block;
+	margin: 1rem 0;
+	font-size: 1rem;
+	cursor: pointer;
+	color: black;
+}
+header input#bar-doc:checked ~ .navbardoc{
+	transform: scaleY(1);
+	opacity: 1;
+}
+
+
+body {
+	margin:0;
+	background-image: url(../imgs/faz.jpg);
+	background-size: cover;
+	font:600 16px/18px 'Open Sans',sans-serif;
+	
+}
+
+.dox{
+opacity:0.2;
+transform: translateY(200px)
+}
+
+
+.bienv{
+
+	color: black;
+	position: absolute;
+	font-size: 1.3rem;
+	
+}
+#mySidenav a {
+	position: absolute;
+	left: -80px;
+	transition: 0.3s;
+	padding: 15px;
+	width: 110px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	border-radius: 0 5px 5px 0;
+	transform: translateY(px);
+ }
+ 
+ #mySidenav a:hover {
+	left: 0;
+ }
+ 
+
+ #addoc {
+	top: 140px;
+	background-color: #2dc8f7;
+	cursor: pointer;
+ }
+
+ #verdoc{
+	top: 209px;
+	background-color: #26687c;
+	cursor: pointer;
+ }
+ 
+#hjv {
+	top: 278px;
+	background-color: rgb(9, 140, 248);
+	cursor: pointer;
+	
+ }
+ #contr {
+	top: 347px;
+	background-color: rgb(0, 62, 112);
+	cursor: pointer;
+	
+ }
+

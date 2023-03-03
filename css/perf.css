@@ -1,0 +1,104 @@
+
+*{
+   font-family: arial;
+   text-align: center;
+  text-decoration: none;
+
+   
+}
+#aper{
+ position:relative; right: -80px;
+}
+picture img
+{
+width: 150px;
+height:150px ;
+box-shadow: 0 12px 15px 0 rgba(88, 92, 229, 0.479), 0 17px 50px 0 rgba(0, 0, 0, .19);
+transform: translateY(120px);
+
+}
+#div1{
+  transform: translateY(80px);
+}
+.perfil{
+  transform: translateY(80px);
+}
+
+header{
+   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background-color: white;
+  box-shadow: 0  .2rem  1rem rgba(0, 0, 0, .1);
+  padding: 17px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000; 
+}
+header input{
+  display: none;
+}
+header label{
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(-0px);	
+}
+#menbar{
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  position: absolute; left: 93%;
+  transform: translateY(-8px);
+}
+
+header .navbar{
+  position: absolute; left: 90%;
+   top: 100%;
+   right: 0;
+  width: 6%;
+  background: white;
+  padding: 1rem 2rem;
+  border-top: .1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  
+}
+
+header .navbar a{
+  display: block;
+  margin: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: black;
+}
+header input:checked ~ .navbar{
+  transform: scaleY(1);
+  opacity: 1;
+}
+header input:checked ~ label::before{
+  content: '\f00d';
+}
+body {
+  margin:0;
+  background-color: aliceblue;
+  font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+header #imgvol{
+  position: absolute; left: 7rem;
+  transform: translateY(-8px);
+  cursor: pointer;
+}
+body {
+	margin:0;
+	background-image: url(../imgs/faz.jpg);
+	background-size: cover;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}

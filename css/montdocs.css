@@ -1,0 +1,45 @@
+body {
+    background-image: url(../imgs/faz.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+       }
+*{
+    font-family: arial;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+
+
+
+header{
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 2rem;
+	background-color: white;
+	box-shadow: 0  .2rem  1rem rgba(0, 0, 0, .1);
+	padding: 10px 10%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000px; 
+}
+
+body a{
+font-size: 1rem;
+}
+
+
+
+
+
+
+header #imgvol{
+    position: absolute; left: 7rem;
+    transform: translateY(-12px);
+    cursor: pointer;
+  }
